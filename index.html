@@ -1,0 +1,93 @@
+
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+  background-color: #ffe4c4;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Create three unequal columns that sits next to each other */
+.column {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+}
+
+/* Middle column */
+.column.middle {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #e0ffff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body  style="background-color:#FF1493;">
+
+<h2> <font color="bisque"> DULCERIA </font></h2>
+<p> <font color="aqua"> <i>En esta página podrás encontrar todos los productos que te ofrecemos en nuestra dulceria... (^.^) </i> </font></p>
+
+
+<div class="header">
+  <h2> <font color="plum"> <font size=20> <font face="Monotype Corsiva"> <u><i> DULCERIA DENNYS </i></u> </font></h2><img src="logo.jpg"width="300"heigth="300"alt=""align="center">
+</div>
+
+<div class="row">
+
+  <div class="column side"   style="background-color:#FFFFCC;">Piñatas <br> <p><em>Ver lista <a href="piñatas.html"><u>AQUI</u></a></em></p></div>
+  <div class="column middle" style="background-color:#FFFFCC;">Dulces  <br> <p><em>Ver lista <a href="productos.html"><u>AQUI</u></a></em></p></div>
+  <div class="column side"   style="background-color:#FFFFCC;">Frituras<br> <p><em>Ver lista <a href="frituras.html"><u>AQUI</u></a></em></p></div> 
+
+</div>
+
+<div class="footer">
+  <p>¡Gracias por visitar esta página!</p>
+</div>
+
+
+<audio src="musica.mp3" controls autoplay loop>
+
+
+</body>
+</html>
